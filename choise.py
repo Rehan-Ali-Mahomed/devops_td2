@@ -50,11 +50,11 @@ firstquestion = random.randint(0, 5)
 secondquestion = firstquestion
 
 while secondquestion == firstquestion:
-    secondquestion = random.randint(0,5)
+    secondquestion = random.randint(0, 5)
     thirdquestion = firstquestion
 
 while thirdquestion == firstquestion or thirdquestion == secondquestion:
-  thirdquestion = random.randint(0,5)
+    thirdquestion = random.randint(0, 5)
 
 print("Firstquestion :")
 print(words[firstquestion])
@@ -70,9 +70,9 @@ fout = open("index.php", "wt")
 # for each line in the input file
 for line in fin:
     fout.write(
-        line.replace('question1 ', words[firstquestion])
-        .replace('question2', words[secondquestion])
-        .replace('question3', words[thirdquestion])
+        line.replace("question1", words[firstquestion])
+        .replace("question2", words[secondquestion])
+        .replace("question3", words[thirdquestion])
     )
 
 # close input and output files
